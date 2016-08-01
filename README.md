@@ -1,4 +1,5 @@
 # promisesAng
+<<<<<<< HEAD
 
 *Generated with [ng-poly](https://github.com/dustinspecker/generator-ng-poly/tree/v0.11.5) version 0.11.5*
 
@@ -18,3 +19,6 @@
 - Run `gulp webdriverUpdate` to download Selenium server standalone and Chrome driver for e2e testing
 - Run `gulp e2eTest` to run e2e tests via Protractor
  - **A localhost must be running** - `gulp dev`
+=======
+Trying angular promises
+>>>>>>> 2694b577b9959732f8fd21833672e823bfdb1515
