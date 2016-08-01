@@ -1,0 +1,2 @@
+# promisesAng
+Trying angular promises
