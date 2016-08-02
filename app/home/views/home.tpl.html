@@ -1,3 +1,30 @@
-<h2>home</h2>
-<p>{{home.ctrlName}}</p>
-<p>{{home.json}}</p>
+<h2>Pet Directory</h2>
+<input type="text" ng-model="home.owner" />
+<button type="submit" ng-click="home.getPetsByOwner()">Find pets</button>
+<button type="submit" ng-click="home.allPets()">Show all pets</button>
+<br/><br/>
+<div>
+	<p>Custom Filter (By column):</p><input type="text" ng-model="home.filter" />
+	<select ng-model="home.select">
+		<option value="petName">petName</option>
+		<option value="speciesName">petSpecie</option>
+	</select>
+</div>
+
+<!--<ul>
+	<li ng-repeat="pet in home.json | doubleFilter:home.filter:home.select">
+		{{pet.petName}} ({{pet.speciesName}})
+	</li>
+</ul>-->
+
+<table>
+	<thead>
+		<th>Pet Name</th>
+		<th>Pet Specie</th>
+	</thead>
+	<tr ng-repeat="pet in home.json | doubleFilter:home.filter:home.select">
+		<td>{{pet.petName}}</td>
+		<td>{{pet.speciesName}}</td>
+	</tr>
+</table>
+
